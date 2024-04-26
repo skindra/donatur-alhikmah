@@ -1,0 +1,84 @@
+:root {
+   --bg: #A79277;
+   --primary: #D1BB9E;
+   --info: #EAD8C0;
+   --warning: #FFF2E1;
+   --text: #fff;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   outline: none;
+   border: none;
+   text-decoration: none;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif !important;
+   background-color: var(--bg);
+   color: var(--text);
+
+}
+
+/* Navbar */
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1.4rem 7%;
+   background-color: var(--primary);
+   border-bottom: 2px solid rgba(1, 1, 1, 0.4);
+   position: fixed;
+   top: 10;
+   left: 0;
+   right: 0;
+}
+
+.navbar .navbar-logo {
+   font-size: 2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: var(--bg);
+   font-style: italic;
+   text-shadow: 1px 1px 4px #100303;
+}
+
+.navbar .navbar-nav a {
+   color: #100303;
+   display: inline-block;
+   margin: 0 1.2rem;
+   font-size: 1.2rem;
+   font-weight: 600;
+
+}
+
+.navbar .navbar-nav a:hover {
+   color: var(--text);
+}
+
+.navbar .navbar-nav a::after {
+   content: '';
+   border-bottom: 0.1rem solid #100303;
+   display: block;
+   padding-bottom: 0.5rem;
+   transform: scaleX(0);
+   transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+   transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+   color: #100303;
+   margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+   color: var(--text);
+}
+
+#hamburger-menu{
+   display: none;
+}
